@@ -20,9 +20,6 @@ services:
   cpab:
     image: eceasy/cli-proxy-api-business:latest
     pull_policy: always
-    build:
-      context: .
-      dockerfile: Dockerfile
     container_name: "cpab"
     restart: unless-stopped
     environment:
